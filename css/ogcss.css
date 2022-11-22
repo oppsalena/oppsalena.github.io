@@ -1,0 +1,130 @@
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+body { 
+    background-image:url('/hellokitty1.gif'); 
+    background-repeat:repeat; 
+}
+
+@font-face{
+    font-family:pink and brown;
+        src: url('/Fonts/Pink_and_Brown-Regular.otf');
+}
+
+@font-face{
+    font-family:"bodoni";
+        src: url('/Fonts/Bodoni-06-Book.otf');
+}
+
+
+.text04{
+    font-family: "pink and brown";
+    text-align: center;
+    float: center;
+    align-self: center;
+    font-size: 55px;
+    padding-top: 100px;
+}
+
+
+.text01{
+    font-family: "bodoni";
+    text-align: center;
+    float: center;
+    align-self: center;
+    font-size: 13px;
+}
+    
+
+.font-size{
+    font-size: 100px;
+    width: 100;
+    animation: fadeIn ease 6s;
+-webkit-animation: fadeIn ease 6s;
+  
+    
+}
+
+.container{
+    align-content: center;
+    
+}
+
+.body{
+   position: relative;
+}
+
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    ::-moz-selection { color: #fff; background: #000; }
+    ::selection { color: #fff; background: #000; }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:not(.nbb) {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.2em;
+    }
+
+    p {
+    	margin: 2rem 0;
+    }
+
+    /* Blocks */
+
+    .db { display: block; }
+    .dib { display: inline-block; }
+
+    .fl { float: left; }
+    .fr { float: right; }
+
+    .p0-5 { padding: 0.75rem }
+    .p1 { padding: 1.5rem }
+    .p2 { padding: 3rem }
+    .px1 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .pt1 { padding-top: 1.5rem }
+
+    .m0 { margin: 0 }
+    .my1 { margin: 1.5rem 0 }
+    .mx1 { margin: 0 1.5rem }
+    .mr1 { margin-right: 1.5rem }
+    .mt1 { margin-top: 1.5rem }
+    .mb1 { margin-bottom: 1.5rem }
+    .my2 { margin: 3rem 0 }
+    .mt2 { margin-top: 3rem }
+    .mb2 { margin-bottom: 3rem }
+    .mt3 { margin-top: 4rem }
+    .my3 {margin: 10rem 0; }
+    .mxa { margin-left: auto; margin-right: auto; }
+
+    /* Media query customs */
+
+    @media (max-width: 900px) {
+      p0-5 { padding: 0.5rem }
+      .p1 { padding: 1rem }
+      .p2 { padding: 1.5rem }
+      .pt1 { padding-top: 1rem }
+      .px1 { padding-left: 0.75rem; padding-right: 0.75rem; }
+      .m0 { margin: 0 }
+      .my2 { margin: 1.5rem 0 }
+    	.mt1 { margin-top: 1rem }
+      .mt2 { margin-top: 1.5rem }
+    	.mb2 { margin-bottom: 1.5rem }
+      .mt3 { margin-top: 2rem }
+    }
+
