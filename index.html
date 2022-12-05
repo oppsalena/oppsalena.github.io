@@ -1,88 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/images/kitty_2.png">
-    <title>alena</title>
-    
-    <!--Template based on URL below-->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
-    <link type="text/css" rel="stylesheet" media="screen" href="/assets/jquery-sakura.min.css" />
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Place your stylesheet here-->
-    <link href="/css/ogcss.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-</head>
-
-
-<body>
-    
-    <main role="main" class="container">
-
-        <div class="text-center">
-            <div id="typedtext" class="text04"></div>
-        </div>
-        
-          <div class="text-center">
-            <h1 id="typedtext2" class="text01">Made this for you</h1>
-        </div>
-        
-        
-        
-        <div class="text-center">
-            <h1 class="text01">	&#9829;</h1> <!-- Heart-->
-        </div>
-        
-    </main><!-- /.container -->
-    
-<div class="db c100 my3">
-            <div class="db mxa">
-				<div id="player1" class="mxa" style="width: 100px; height: 100px;"></div>
-					</div>
-
-		<script src="https://unpkg.com/microne/microne.js"></script>
-		<script>
-			var p1 = new Microne(document.getElementById('player1'))
-			p1.source('media/This_Must_Be_My_Dream.mp3')
-			setTimeout(function() {
-				p1.play()
-			}, 2000)
-		</script>
-    
-  <footer>
-<div class="py-4">
-      <div class="container text-center">
-        <p class="text-muted mb-0 py-2">Made with <i class="icon ion-heart" style="color: #e25555;"></i> - alexx</p>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="/images/kitty_2.png">
+      <title>alena</title>
+      <!--Template based on URL below-->
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Place your stylesheet here-->
+      <link href="/css/style.css" rel="stylesheet" type="text/css">
+      <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+   </head>
+   <body>
+      <main role="main" class="container">
+         <div class="text-center">
+            <div class="text04" id="element"></div>
+         </div>
+         <div class="text-center">
+            <h1 class="text01" id="element2"></h1>
+         </div>
+         <div class="text-center">
+            <h1 class="text01">	&#9829;</h1>
+             
+            <!-- Heart-->
+         </div>
+      </main>
+      <div class="db c100 my3">
+      <div class="db mxa">
+         <div id="player1" class="mxa" style="width: 100px; height: 100px;"></div>
       </div>
-    </div>
-  </footer> 
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-<script src="/assets/Writer.js"></script>
-<script src="/assets/jquery-sakura.min.js"></script>
-<script>
-    // domReady
-    $(function() {
-        $.fn.sakura();
-    });
-
-    // windowLoad
-    $(window).load(function() {
-        $.fn.sakura();
-    });
-</script>
+      <script src="https://unpkg.com/microne/microne.js"></script>
+      <script>
+         var p1 = new Microne(document.getElementById('player1'))
+         p1.source('media/This_Must_Be_My_Dream.mp3')
+         setTimeout(function() {
+         	p1.play()
+         }, 2000)
+      </script>
+      <footer>
+         <div class="py-4">
+            <div class="container text-center">
+               <p class=" mb-0 py-2 text03">Made with <img class="heart" src="/images/heart.svg"></img> - alexx</p>
+            </div>
+         </div>
+      </footer>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script>
+         new TypeIt("#element", {
+  speed: 70,
+  waitUntilVisible: true,
+})
+  .type("Hi Cutee Pie", { delay: 300 })
+  .move(-5)
+  .delete(1)
+  .type("i")
+  .move(null, { to: "END" })
+  .break({ delay: 500 })
+  .type("I Missss")
+  .pause(300)
+  .delete(2)
+  .type(" You.")
+  .move(null, { to: "END" })
+  .go();
+      </script>
+<script>       
+ new TypeIt("#element2", {
+  delay: 1000,
+  speed: 70,
+  waitUntilVisible: true,
+  cursor: false,
+})
+  .pause(5000)
+  .type("Made you this.", { delay: 300 })
+  .go();
+      </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
 </html>
