@@ -25,6 +25,30 @@ body {
         src: url('/Fonts/Bodoni-06-Book.otf');
 }
 
+.style-cat{
+   padding-top: 123px;     
+}
+
+@media (min-width:900px) {
+    .style-cat {
+        padding-top: 9%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .style-cat{
+        padding-top: 14%;
+    }
+   /* Styles for Desktops */
+ }
+.cat-container{
+    
+    
+}
+.cat{
+    height: 60px;
+    width: 70px;
+}
 
 .text04{
     font-family: "pink and brown";
